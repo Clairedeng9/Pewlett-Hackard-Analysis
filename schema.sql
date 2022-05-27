@@ -35,4 +35,23 @@ CREATE TABLE salaries (
   PRIMARY KEY (emp_no)
 );
 
+CREATE TABLE titles (
+  emp_no INT NOT NULL,
+  title VARCHAR NOT NULL,
+  from_date DATE NOT NULL,
+  to_date DATE NOT NULL
+);
+
+CREATE TABLE dept_emp (
+  emp_no INT NOT NULL,
+  dept_no VARCHAR NOT NULL,
+  from_date DATE NOT NULL,
+  to_date DATE NOT NULL
+);
+
+
 SELECT * FROM departments;
+SELECT * FROM employees;
+SELECT * FROM dept_manager;
+
+DROP TABLE titles;
